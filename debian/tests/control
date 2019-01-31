@@ -3,3 +3,7 @@ Test-Command: apt --help
 Test-Command: apt-get --help
 
 Test-Command: aptitude --help
+
+Test-Command: dpkg --help
+
+Test-Command: dpkg-divert --list

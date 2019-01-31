@@ -1,4 +1,4 @@
-apt-nosync (0) UNRELEASED; urgency=medium
+apt-nosync (0.1) unstable; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
 

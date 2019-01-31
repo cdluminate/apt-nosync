@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+#dpkg-divert --divert /usr/bin/dpkg.real --rename /usr/bin/dpkg
+dpkg-divert --divert /usr/bin/apt.real --rename /usr/bin/apt
+dpkg-divert --divert /usr/bin/apt-get.real --rename /usr/bin/apt-get
+dpkg-divert --divert /usr/bin/aptitude.real --rename /usr/bin/aptitude
+
+#DEBHELPER#
+exit 0

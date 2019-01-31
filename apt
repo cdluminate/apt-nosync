@@ -1,0 +1,2 @@
+#!/bin/sh
+eatmydata -- /usr/bin/apt.real $@

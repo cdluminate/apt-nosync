@@ -1,9 +1,11 @@
 #!/bin/sh
 set -e
 
-dpkg-divert --rename --remove /usr/bin/apt
-dpkg-divert --rename --remove /usr/bin/apt-get
-dpkg-divert --rename --remove /usr/bin/aptitude
+if [ "$1" != "upgrade" ]; then
+  dpkg-divert --rename --remove /usr/bin/apt
+  dpkg-divert --rename --remove /usr/bin/apt-get
+  dpkg-divert --rename --remove /usr/bin/aptitude
+fi
 
 #DEBHELPER#
 exit 0

@@ -3,7 +3,7 @@ set -e
 
 dpkg-divert --divert /usr/bin/apt.real --rename /usr/bin/apt
 dpkg-divert --divert /usr/bin/apt-get.real --rename /usr/bin/apt-get
-dpkg-divert --divert /usr/bin/aptitude.real --rename /usr/bin/aptitude
+dpkg-divert --divert /usr/bin/aptitude-curses.real --rename /usr/bin/aptitude-curses
 
 #DEBHELPER#
 exit 0

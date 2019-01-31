@@ -4,7 +4,7 @@ set -e
 if [ "$1" != "upgrade" ]; then
   dpkg-divert --rename --remove /usr/bin/apt
   dpkg-divert --rename --remove /usr/bin/apt-get
-  dpkg-divert --rename --remove /usr/bin/aptitude
+  dpkg-divert --rename --remove /usr/bin/aptitude-curses
 fi
 
 #DEBHELPER#

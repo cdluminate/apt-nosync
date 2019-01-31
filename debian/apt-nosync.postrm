@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
 
-# FIXME: revert dpkg diversions
+dpkg-divert --rename --remove /usr/bin/apt
+dpkg-divert --rename --remove /usr/bin/apt-get
+dpkg-divert --rename --remove /usr/bin/aptitude
 
 #DEBHELPER#
 exit 0

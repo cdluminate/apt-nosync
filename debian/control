@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 12~),
 
 Package: apt-nosync
 Architecture: all
-Depends: ${misc:Depends},
+Depends: ${misc:Depends}, apt, aptitude,
 Description: Accelerate APT and DPKG with eatmydata
  Accelerate APT and DPKG with eatmydata.
  .

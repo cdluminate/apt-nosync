@@ -1,0 +1,5 @@
+Test-Command: apt --help
+
+Test-Command: apt-get --help
+
+Test-Command: aptitude --help

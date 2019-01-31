@@ -1,0 +1,3 @@
+binary-without-manpage usr/bin/apt
+binary-without-manpage usr/bin/apt-get
+binary-without-manpage usr/bin/aptitude

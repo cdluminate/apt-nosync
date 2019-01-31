@@ -1,0 +1,17 @@
+Source: apt-nosync
+Section: admin
+Homepage: https://github.com/cdluminate/apt-nosync
+Priority: optional
+Standards-Version: 4.3.0
+Vcs-Browser: https://github.com/cdluminate/apt-nosync
+Vcs-Git: https://github.com/cdluminate/apt-nosync.git
+Maintainer: Mo Zhou <cdluminate@gmail.com>
+Build-Depends: debhelper (>= 12~),
+
+Package: apt-nosync
+Architecture: all
+Depends: ${misc:Depends},
+Description: Accelerate APT and DPKG with eatmydata
+ Accelerate APT and DPKG with eatmydata.
+ .
+ This package will divert apt and dpkg.
